@@ -13,7 +13,7 @@
     <nav class="flex border-b border-grey bg-white fixed pin-t pin-x z-10 h-14 items-center">
       <div class="w-full max-w-xl mx-auto">
         <div class="flex">
-          <div class="flex-grow">
+          <div class="flex-grow hidden lg:block">
             <div class="flex items-center">
               <div class="lg:w-16 text-center mx-4">
                 <a href="#" class="text-xl w-10 h-10 block p-2 rounded-full text-grey-dark hover:text-blue-dark hover:bg-blue-lightest">
@@ -47,11 +47,14 @@
           </div>
           <div class="flex-shrink">
             <div class="flex items-center p-1 rounded-full hover:bg-grey-light">
-              <img src="https://pbs.twimg.com/profile_images/1048836526237306886/kUxssl4H_normal.jpg" alt="Budi Raharja" class="rounded-full w-8 mr-2">
+              <img src="https://pbs.twimg.com/profile_images/1048836526237306886/kUxssl4H_normal.jpg" alt="Budi Raharja" class="hidden lg:block rounded-full w-8 mr-2">
               <div class="flex items-center">
-                <div class="font-bold text-sm">Budi Raharja</div>
-                <div class="font-bold text-sm">
-                  <i class="fas fa-caret-down ml-2"></i>
+                <div class="text-lg ml-2 w-12 lg:hidden">
+                  <i class="fas fa-arrow-left"></i>
+                </div>
+                <div class="font-bold mx-2 text-lg lg:text-sm">Budi Raharja</div>
+                <div class="font-bold text-sm hidden lg:block">
+                  <i class="fas fa-caret-down"></i>
                 </div>
               </div>
             </div>
@@ -62,13 +65,13 @@
     <!-- end nav -->
 
     <!-- content  -->
-    <div class="w-full max-w-xl mt-16 mx-auto">
+    <div class="w-full max-w-xl mt-14 lg:mt-16 mx-auto">
       <div class="flex relative">
         <!-- left content -->
         <div class="lg:w-3/5 mb-3">
 
           <!-- header image -->
-          <div class="box-user-header-picture h-48 bg-white block">
+          <div class="box-user-header-picture h-32 lg:h-48 bg-white block">
             <img src="https://pbs.twimg.com/profile_banners/241032028/1538897205/1500x500" class="h-full" alt="">
           </div>
           <!-- end header image -->
@@ -76,7 +79,7 @@
           <!-- user info box-->
           <div class="box-user-info px-2 relative bg-white">
             <!-- user profile picture -->
-            <img src="https://pbs.twimg.com/profile_images/1048836526237306886/kUxssl4H_400x400.jpg" class="rounded-full w-32 border-4 border-white -mt-20" alt="">
+            <img src="https://pbs.twimg.com/profile_images/1048836526237306886/kUxssl4H_400x400.jpg" class="rounded-full w-24 lg:w-32 border-4 border-white -mt-14 lg:-mt-20" alt="">
 
             <!-- user info -->
             <div class="user-info pl-1 pb-4">
@@ -138,11 +141,11 @@
                         </p>
                       </div>
                       <div class="tweet-actions">
-                        <div class="flex text-base">
-                          <button class="text-grey-dark hover:text-blue mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i>254</button>
-                          <button class="text-green hover:text-green mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg text-green hover:bg-green-lightest"></i>1.3K</button>
-                          <button class="text-grey-dark hover:text-red mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i>13.7K</button>
-                          <button class="text-grey-dark hover:text-blue mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
+                        <div class="flex text-sm lg:text-base">
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i>254</button>
+                          <button class="text-green hover:text-green mx-2 lg:mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg text-green hover:bg-green-lightest"></i>1.3K</button>
+                          <button class="text-grey-dark hover:text-red mx-2 lg:mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i>13.7K</button>
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
                         </div>
                       </div>
                     </div>
@@ -165,11 +168,11 @@
                         </p>
                       </div>
                       <div class="tweet-actions">
-                        <div class="flex text-base">
-                          <button class="text-grey-dark hover:text-blue mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
-                          <button class="text-grey-dark hover:text-green mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg hover:bg-green-lightest"></i></button>
-                          <button class="text-grey-dark hover:text-red mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i></button>
-                          <button class="text-grey-dark hover:text-blue mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
+                        <div class="flex text-sm lg:text-base">
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
+                          <button class="text-grey-dark hover:text-green mx-2 lg:mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg hover:bg-green-lightest"></i></button>
+                          <button class="text-grey-dark hover:text-red mx-2 lg:mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i></button>
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
                         </div>
                       </div>
                     </div>
@@ -198,7 +201,7 @@
                         </p>
                         <div class="box-link-preview rounded-lg border border-grey-light mt-4">
                           <a href="#" class="no-underline">
-                            <img src="https://pbs.twimg.com/card_img/1050262059340845056/aooKC0Md?format=jpg&name=orig" class="h-64 rounded-t-lg" alt="">
+                            <img src="https://pbs.twimg.com/card_img/1050262059340845056/aooKC0Md?format=jpg&name=orig" class="w-full max-h-32 lg:h-64 rounded-t-lg" alt="">
                             <div class="p-2">
                               <p class="leading-tight text-black">
                                 How did Chile manage to survive its recent earthquake virtually unscathed?
@@ -210,11 +213,11 @@
                         </div>
                       </div>
                       <div class="tweet-actions">
-                        <div class="flex text-base">
-                          <button class="text-grey-dark hover:text-blue mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i>3</button>
-                          <button class="text-green hover:text-green mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg hover:bg-green-lightest"></i>84</button>
-                          <button class="text-grey-dark hover:text-red mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i>38</button>
-                          <button class="text-grey-dark hover:text-blue mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
+                        <div class="flex text-sm lg:text-base">
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i>3</button>
+                          <button class="text-green hover:text-green mx-2 lg:mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg hover:bg-green-lightest"></i>84</button>
+                          <button class="text-grey-dark hover:text-red mx-2 lg:mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i>38</button>
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
                         </div>
                       </div>
                       <div class="tweet-thread-actions mt-2">
@@ -241,11 +244,11 @@
                         </p>
                       </div>
                       <div class="tweet-actions">
-                        <div class="flex text-base">
-                          <button class="text-grey-dark hover:text-blue mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i>1</button>
-                          <button class="text-grey-dark hover:text-green mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg hover:bg-green-lightest"></i></button>
-                          <button class="text-grey-dark hover:text-red mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i></button>
-                          <button class="text-grey-dark hover:text-blue mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
+                        <div class="flex text-sm lg:text-base">
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i>1</button>
+                          <button class="text-grey-dark hover:text-green mx-2 lg:mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg hover:bg-green-lightest"></i></button>
+                          <button class="text-grey-dark hover:text-red mx-2 lg:mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i></button>
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
                         </div>
                       </div>
                     </div>
@@ -339,11 +342,11 @@
                         </p>
                       </div>
                       <div class="tweet-actions">
-                        <div class="flex text-base">
-                          <button class="text-grey-dark hover:text-blue mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i>254</button>
-                          <button class="text-green hover:text-green mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg text-green hover:bg-green-lightest"></i>1.3K</button>
-                          <button class="text-grey-dark hover:text-red mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i>13.7K</button>
-                          <button class="text-grey-dark hover:text-blue mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
+                        <div class="flex text-sm lg:text-base">
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i>254</button>
+                          <button class="text-green hover:text-green mx-2 lg:mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg text-green hover:bg-green-lightest"></i>1.3K</button>
+                          <button class="text-grey-dark hover:text-red mx-2 lg:mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i>13.7K</button>
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
                         </div>
                       </div>
                     </div>
@@ -366,11 +369,11 @@
                         </p>
                       </div>
                       <div class="tweet-actions">
-                        <div class="flex text-base">
-                          <button class="text-grey-dark hover:text-blue mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
-                          <button class="text-grey-dark hover:text-green mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg hover:bg-green-lightest"></i></button>
-                          <button class="text-grey-dark hover:text-red mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i></button>
-                          <button class="text-grey-dark hover:text-blue mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
+                        <div class="flex text-sm lg:text-base">
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
+                          <button class="text-grey-dark hover:text-green mx-2 lg:mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg hover:bg-green-lightest"></i></button>
+                          <button class="text-grey-dark hover:text-red mx-2 lg:mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i></button>
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
                         </div>
                       </div>
                     </div>
@@ -399,7 +402,7 @@
                         </p>
                         <div class="box-link-preview rounded-lg border border-grey-light mt-4">
                           <a href="#" class="no-underline">
-                            <img src="https://pbs.twimg.com/card_img/1050262059340845056/aooKC0Md?format=jpg&name=orig" class="h-64 rounded-t-lg" alt="">
+                            <img src="https://pbs.twimg.com/card_img/1050262059340845056/aooKC0Md?format=jpg&name=orig" class="w-full max-h-32 lg:h-64 rounded-t-lg" alt="">
                             <div class="p-2">
                               <p class="leading-tight text-black">
                                 How did Chile manage to survive its recent earthquake virtually unscathed?
@@ -411,11 +414,11 @@
                         </div>
                       </div>
                       <div class="tweet-actions">
-                        <div class="flex text-base">
-                          <button class="text-grey-dark hover:text-blue mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i>3</button>
-                          <button class="text-green hover:text-green mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg hover:bg-green-lightest"></i>84</button>
-                          <button class="text-grey-dark hover:text-red mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i>38</button>
-                          <button class="text-grey-dark hover:text-blue mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
+                        <div class="flex text-sm lg:text-base">
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i>3</button>
+                          <button class="text-green hover:text-green mx-2 lg:mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg hover:bg-green-lightest"></i>84</button>
+                          <button class="text-grey-dark hover:text-red mx-2 lg:mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i>38</button>
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
                         </div>
                       </div>
                       <div class="tweet-thread-actions mt-2">
@@ -442,11 +445,11 @@
                         </p>
                       </div>
                       <div class="tweet-actions">
-                        <div class="flex text-base">
-                          <button class="text-grey-dark hover:text-blue mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i>1</button>
-                          <button class="text-grey-dark hover:text-green mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg hover:bg-green-lightest"></i></button>
-                          <button class="text-grey-dark hover:text-red mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i></button>
-                          <button class="text-grey-dark hover:text-blue mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
+                        <div class="flex text-sm lg:text-base">
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4 ml-0"><i class="far fa-comment rounded-full p-2 text-lg hover:bg-blue-lightest"></i>1</button>
+                          <button class="text-grey-dark hover:text-green mx-2 lg:mx-4"><i class="fas fa-retweet rounded-full p-2 text-lg hover:bg-green-lightest"></i></button>
+                          <button class="text-grey-dark hover:text-red mx-2 lg:mx-4"><i class="far fa-heart rounded-full p-2 text-lg hover:bg-red-lightest"></i></button>
+                          <button class="text-grey-dark hover:text-blue mx-2 lg:mx-4"><i class="fas fa-ellipsis-h rounded-full p-2 text-lg hover:bg-blue-lightest"></i></button>
                         </div>
                       </div>
                     </div>
@@ -461,7 +464,7 @@
         <!-- end left content -->
 
         <!-- right content -->
-        <div class="lg:w-2/5 ml-6">
+        <div class="lg:w-2/5 ml-6 hidden lg:block">
           <!-- media -->
           <div class="box-media bg-white">
             <div class="flex flex-col flex-wrap">
