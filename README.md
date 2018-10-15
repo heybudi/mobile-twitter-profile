@@ -21,3 +21,5 @@ To see the demo, click [here](https://playground.budiraharja.com/twitter-profile
 
 ## Screenshots
 ![Screenshot 1](/screenshot-1.png "Screenshot 1")
+
+![Screenshot 2](/screenshot-2.png "Screenshot 2")
