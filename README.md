@@ -20,4 +20,4 @@ You can play around with `/index.html` to see the effects of your changes.
 To see the demo, click [here](https://playground.budiraharja.com/twitter-profile-tailwind).
 
 ## Screenshots
-![Screenshot 1](https://playground.budiraharja.com/twitter-profile-tailwind/screenshot-1.png "Screenshot 1")
+![Screenshot 1](/screenshot-1.png "Screenshot 1")
